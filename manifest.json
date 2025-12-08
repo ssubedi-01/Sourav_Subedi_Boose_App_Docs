@@ -1,0 +1,200 @@
+{
+  "source_base_path": "C:/Users/Sourav/source/repos/ase-boose-assignment-ssubedi-01/Medium_Scale_Software_Engineering_Project/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppCanvas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppCanvas.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppCanvas",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppCanvas.yml\" sourcestartlinenumber=\"1\">This class extends the canvas class from the library\nThe umplemented method from the libray are implemented here</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppCommandFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppCommandFactory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppCommandFactory",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppCommandFactory.yml\" sourcestartlinenumber=\"1\">the extention of the command factory to add custom made command into it</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppMoveto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppMoveto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppMoveto",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppMoveto.yml\" sourcestartlinenumber=\"1\">Override base moveto class to add validation for positive integers\nand handle invalid expressions gracefully</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppParser",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppParser.yml\" sourcestartlinenumber=\"1\">extends the base parser from the library</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppStoredProgram.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppStoredProgram.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppStoredProgram",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppStoredProgram.yml\" sourcestartlinenumber=\"1\">extends the base stored program</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Medium_Scale_Software_Engineering_Project.OutputForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Medium_Scale_Software_Engineering_Project.OutputForm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Medium_Scale_Software_Engineering_Project.OutputForm",
+      "Summary": "<p sourcefile=\"api/Medium_Scale_Software_Engineering_Project.OutputForm.yml\" sourcestartlinenumber=\"1\">Represents the main output and editor form for the BOOSE graphics application.\nHandles program input, parsing, execution, canvas drawing, file operations, and UI commands.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Medium_Scale_Software_Engineering_Project.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Medium_Scale_Software_Engineering_Project.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Medium_Scale_Software_Engineering_Project",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AppCanvas | Sourav_Subedi_Paint_App </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AppCanvas | Sourav_Subedi_Paint_App ">
+      
+      <meta name="description" content="This class extends the canvas class from the library The umplemented method from the libray are implemented here">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/new/main/apiSpec/new?filename=MYBooseApp_AppCanvas.md&amp;value=---%0Auid%3A%20MYBooseApp.AppCanvas%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Sourav_Subedi_Paint_App">
+            Sourav_Subedi_Paint_App
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MYBooseApp.AppCanvas">
+
+
+
+  <h1 id="MYBooseApp_AppCanvas" data-uid="MYBooseApp.AppCanvas" class="text-break">
+Class AppCanvas  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MYBooseApp.html">MYBooseApp</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MYBooseApp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>This class extends the canvas class from the library
+The umplemented method from the libray are implemented here</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AppCanvas : Canvas, ICanvas</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Canvas</span></div>
+      <div><span class="xref">AppCanvas</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">ICanvas</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">Canvas.background_colour</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MYBooseApp_AppCanvas__ctor_" data-uid="MYBooseApp.AppCanvas.#ctor*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas__ctor_System_Int32_System_Int32_" data-uid="MYBooseApp.AppCanvas.#ctor(System.Int32,System.Int32)">
+  AppCanvas(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>it is used to initalize the canvas</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppCanvas(int width, int height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the width of the canvas</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the height of the canvas</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MYBooseApp_AppCanvas_PenColour_" data-uid="MYBooseApp.AppCanvas.PenColour*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_PenColour" data-uid="MYBooseApp.AppCanvas.PenColour">
+  PenColour
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>handels the color of the pen</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object PenColour { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_Xpos_" data-uid="MYBooseApp.AppCanvas.Xpos*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_Xpos" data-uid="MYBooseApp.AppCanvas.Xpos">
+  Xpos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>handlels the horizontal position of the cursor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Xpos { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_Ypos_" data-uid="MYBooseApp.AppCanvas.Ypos*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_Ypos" data-uid="MYBooseApp.AppCanvas.Ypos">
+  Ypos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>handlels the verticle position of the cursor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Ypos { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MYBooseApp_AppCanvas_Circle_" data-uid="MYBooseApp.AppCanvas.Circle*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_Circle_System_Int32_System_Boolean_" data-uid="MYBooseApp.AppCanvas.Circle(System.Int32,System.Boolean)">
+  Circle(int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>draws the circle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Circle(int radius, bool filled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the radius of the circle</p>
+</dd>
+    <dt><code>filled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>bool value to determine the fill of the circle</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_Clear_" data-uid="MYBooseApp.AppCanvas.Clear*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_Clear" data-uid="MYBooseApp.AppCanvas.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>clears the canvas</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_DisposeResources_" data-uid="MYBooseApp.AppCanvas.DisposeResources*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_DisposeResources" data-uid="MYBooseApp.AppCanvas.DisposeResources">
+  DisposeResources()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>used to dispose the resource after use</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisposeResources()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_DrawTo_" data-uid="MYBooseApp.AppCanvas.DrawTo*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_DrawTo_System_Int32_System_Int32_" data-uid="MYBooseApp.AppCanvas.DrawTo(System.Int32,System.Int32)">
+  DrawTo(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>draws the line</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DrawTo(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>horizontal position of the end of line</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>verticle position fo the end of line</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_MoveTo_" data-uid="MYBooseApp.AppCanvas.MoveTo*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_MoveTo_System_Int32_System_Int32_" data-uid="MYBooseApp.AppCanvas.MoveTo(System.Int32,System.Int32)">
+  MoveTo(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>moves the pen to the desired position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void MoveTo(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>horizontal position of the pen</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>vertical postion of the pen</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_Rect_" data-uid="MYBooseApp.AppCanvas.Rect*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_Rect_System_Int32_System_Int32_System_Boolean_" data-uid="MYBooseApp.AppCanvas.Rect(System.Int32,System.Int32,System.Boolean)">
+  Rect(int, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>draws the rectangle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Rect(int width, int height, bool filled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>width of recatangle</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>height of rectangle</p>
+</dd>
+    <dt><code>filled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>bool value to determine the fill of the rectangle</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_Rectangle_" data-uid="MYBooseApp.AppCanvas.Rectangle*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_Rectangle_System_Int32_System_Int32_System_Boolean_" data-uid="MYBooseApp.AppCanvas.Rectangle(System.Int32,System.Int32,System.Boolean)">
+  Rectangle(int, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>handles the difference in spelling of the rect method</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Rectangle(int width, int height, bool filled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>filled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_Reset_" data-uid="MYBooseApp.AppCanvas.Reset*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_Reset" data-uid="MYBooseApp.AppCanvas.Reset">
+  Reset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>resets the canvas and sets position of pen to 0,0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_Set_" data-uid="MYBooseApp.AppCanvas.Set*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_Set_System_Int32_System_Int32_" data-uid="MYBooseApp.AppCanvas.Set(System.Int32,System.Int32)">
+  Set(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Set(int width, int height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_SetColour_" data-uid="MYBooseApp.AppCanvas.SetColour*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_SetColour_System_Int32_System_Int32_System_Int32_" data-uid="MYBooseApp.AppCanvas.SetColour(System.Int32,System.Int32,System.Int32)">
+  SetColour(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>sets the color of the brush</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetColour(int red, int green, int blue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>red</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>red value</p>
+</dd>
+    <dt><code>green</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>green value</p>
+</dd>
+    <dt><code>blue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>blue value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_Tri_" data-uid="MYBooseApp.AppCanvas.Tri*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_Tri_System_Int32_System_Int32_" data-uid="MYBooseApp.AppCanvas.Tri(System.Int32,System.Int32)">
+  Tri(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>draws the triangle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Tri(int width, int height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_WriteText_" data-uid="MYBooseApp.AppCanvas.WriteText*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_WriteText_System_String_" data-uid="MYBooseApp.AppCanvas.WriteText(System.String)">
+  WriteText(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteText(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_WriteText_" data-uid="MYBooseApp.AppCanvas.WriteText*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_WriteText_System_String_System_Int32_System_Int32_" data-uid="MYBooseApp.AppCanvas.WriteText(System.String,System.Int32,System.Int32)">
+  WriteText(string, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>writes the text in the canvas</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteText(string text, int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>the text to be written</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the horizontal position of the text</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the vertical position of the text</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_getBitmap_" data-uid="MYBooseApp.AppCanvas.getBitmap*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_getBitmap" data-uid="MYBooseApp.AppCanvas.getBitmap">
+  getBitmap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>returns the bitmap</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override object getBitmap()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

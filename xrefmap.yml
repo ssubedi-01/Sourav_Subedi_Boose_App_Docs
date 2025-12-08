@@ -1,0 +1,432 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: MYBooseApp
+  name: MYBooseApp
+  href: api/MYBooseApp.html
+  commentId: N:MYBooseApp
+  fullName: MYBooseApp
+  nameWithType: MYBooseApp
+- uid: MYBooseApp.AppCanvas
+  name: AppCanvas
+  href: api/MYBooseApp.AppCanvas.html
+  commentId: T:MYBooseApp.AppCanvas
+  fullName: MYBooseApp.AppCanvas
+  nameWithType: AppCanvas
+- uid: MYBooseApp.AppCanvas.#ctor(System.Int32,System.Int32)
+  name: AppCanvas(int, int)
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas__ctor_System_Int32_System_Int32_
+  commentId: M:MYBooseApp.AppCanvas.#ctor(System.Int32,System.Int32)
+  name.vb: New(Integer, Integer)
+  fullName: MYBooseApp.AppCanvas.AppCanvas(int, int)
+  fullName.vb: MYBooseApp.AppCanvas.New(Integer, Integer)
+  nameWithType: AppCanvas.AppCanvas(int, int)
+  nameWithType.vb: AppCanvas.New(Integer, Integer)
+- uid: MYBooseApp.AppCanvas.#ctor*
+  name: AppCanvas
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas__ctor_
+  commentId: Overload:MYBooseApp.AppCanvas.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MYBooseApp.AppCanvas.AppCanvas
+  fullName.vb: MYBooseApp.AppCanvas.New
+  nameWithType: AppCanvas.AppCanvas
+  nameWithType.vb: AppCanvas.New
+- uid: MYBooseApp.AppCanvas.Circle(System.Int32,System.Boolean)
+  name: Circle(int, bool)
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Circle_System_Int32_System_Boolean_
+  commentId: M:MYBooseApp.AppCanvas.Circle(System.Int32,System.Boolean)
+  name.vb: Circle(Integer, Boolean)
+  fullName: MYBooseApp.AppCanvas.Circle(int, bool)
+  fullName.vb: MYBooseApp.AppCanvas.Circle(Integer, Boolean)
+  nameWithType: AppCanvas.Circle(int, bool)
+  nameWithType.vb: AppCanvas.Circle(Integer, Boolean)
+- uid: MYBooseApp.AppCanvas.Circle*
+  name: Circle
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Circle_
+  commentId: Overload:MYBooseApp.AppCanvas.Circle
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.Circle
+  nameWithType: AppCanvas.Circle
+- uid: MYBooseApp.AppCanvas.Clear
+  name: Clear()
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Clear
+  commentId: M:MYBooseApp.AppCanvas.Clear
+  fullName: MYBooseApp.AppCanvas.Clear()
+  nameWithType: AppCanvas.Clear()
+- uid: MYBooseApp.AppCanvas.Clear*
+  name: Clear
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Clear_
+  commentId: Overload:MYBooseApp.AppCanvas.Clear
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.Clear
+  nameWithType: AppCanvas.Clear
+- uid: MYBooseApp.AppCanvas.DisposeResources
+  name: DisposeResources()
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_DisposeResources
+  commentId: M:MYBooseApp.AppCanvas.DisposeResources
+  fullName: MYBooseApp.AppCanvas.DisposeResources()
+  nameWithType: AppCanvas.DisposeResources()
+- uid: MYBooseApp.AppCanvas.DisposeResources*
+  name: DisposeResources
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_DisposeResources_
+  commentId: Overload:MYBooseApp.AppCanvas.DisposeResources
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.DisposeResources
+  nameWithType: AppCanvas.DisposeResources
+- uid: MYBooseApp.AppCanvas.DrawTo(System.Int32,System.Int32)
+  name: DrawTo(int, int)
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_DrawTo_System_Int32_System_Int32_
+  commentId: M:MYBooseApp.AppCanvas.DrawTo(System.Int32,System.Int32)
+  name.vb: DrawTo(Integer, Integer)
+  fullName: MYBooseApp.AppCanvas.DrawTo(int, int)
+  fullName.vb: MYBooseApp.AppCanvas.DrawTo(Integer, Integer)
+  nameWithType: AppCanvas.DrawTo(int, int)
+  nameWithType.vb: AppCanvas.DrawTo(Integer, Integer)
+- uid: MYBooseApp.AppCanvas.DrawTo*
+  name: DrawTo
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_DrawTo_
+  commentId: Overload:MYBooseApp.AppCanvas.DrawTo
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.DrawTo
+  nameWithType: AppCanvas.DrawTo
+- uid: MYBooseApp.AppCanvas.MoveTo(System.Int32,System.Int32)
+  name: MoveTo(int, int)
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_MoveTo_System_Int32_System_Int32_
+  commentId: M:MYBooseApp.AppCanvas.MoveTo(System.Int32,System.Int32)
+  name.vb: MoveTo(Integer, Integer)
+  fullName: MYBooseApp.AppCanvas.MoveTo(int, int)
+  fullName.vb: MYBooseApp.AppCanvas.MoveTo(Integer, Integer)
+  nameWithType: AppCanvas.MoveTo(int, int)
+  nameWithType.vb: AppCanvas.MoveTo(Integer, Integer)
+- uid: MYBooseApp.AppCanvas.MoveTo*
+  name: MoveTo
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_MoveTo_
+  commentId: Overload:MYBooseApp.AppCanvas.MoveTo
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.MoveTo
+  nameWithType: AppCanvas.MoveTo
+- uid: MYBooseApp.AppCanvas.PenColour
+  name: PenColour
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_PenColour
+  commentId: P:MYBooseApp.AppCanvas.PenColour
+  fullName: MYBooseApp.AppCanvas.PenColour
+  nameWithType: AppCanvas.PenColour
+- uid: MYBooseApp.AppCanvas.PenColour*
+  name: PenColour
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_PenColour_
+  commentId: Overload:MYBooseApp.AppCanvas.PenColour
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.PenColour
+  nameWithType: AppCanvas.PenColour
+- uid: MYBooseApp.AppCanvas.Rect(System.Int32,System.Int32,System.Boolean)
+  name: Rect(int, int, bool)
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Rect_System_Int32_System_Int32_System_Boolean_
+  commentId: M:MYBooseApp.AppCanvas.Rect(System.Int32,System.Int32,System.Boolean)
+  name.vb: Rect(Integer, Integer, Boolean)
+  fullName: MYBooseApp.AppCanvas.Rect(int, int, bool)
+  fullName.vb: MYBooseApp.AppCanvas.Rect(Integer, Integer, Boolean)
+  nameWithType: AppCanvas.Rect(int, int, bool)
+  nameWithType.vb: AppCanvas.Rect(Integer, Integer, Boolean)
+- uid: MYBooseApp.AppCanvas.Rect*
+  name: Rect
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Rect_
+  commentId: Overload:MYBooseApp.AppCanvas.Rect
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.Rect
+  nameWithType: AppCanvas.Rect
+- uid: MYBooseApp.AppCanvas.Rectangle(System.Int32,System.Int32,System.Boolean)
+  name: Rectangle(int, int, bool)
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Rectangle_System_Int32_System_Int32_System_Boolean_
+  commentId: M:MYBooseApp.AppCanvas.Rectangle(System.Int32,System.Int32,System.Boolean)
+  name.vb: Rectangle(Integer, Integer, Boolean)
+  fullName: MYBooseApp.AppCanvas.Rectangle(int, int, bool)
+  fullName.vb: MYBooseApp.AppCanvas.Rectangle(Integer, Integer, Boolean)
+  nameWithType: AppCanvas.Rectangle(int, int, bool)
+  nameWithType.vb: AppCanvas.Rectangle(Integer, Integer, Boolean)
+- uid: MYBooseApp.AppCanvas.Rectangle*
+  name: Rectangle
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Rectangle_
+  commentId: Overload:MYBooseApp.AppCanvas.Rectangle
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.Rectangle
+  nameWithType: AppCanvas.Rectangle
+- uid: MYBooseApp.AppCanvas.Reset
+  name: Reset()
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Reset
+  commentId: M:MYBooseApp.AppCanvas.Reset
+  fullName: MYBooseApp.AppCanvas.Reset()
+  nameWithType: AppCanvas.Reset()
+- uid: MYBooseApp.AppCanvas.Reset*
+  name: Reset
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Reset_
+  commentId: Overload:MYBooseApp.AppCanvas.Reset
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.Reset
+  nameWithType: AppCanvas.Reset
+- uid: MYBooseApp.AppCanvas.Set(System.Int32,System.Int32)
+  name: Set(int, int)
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Set_System_Int32_System_Int32_
+  commentId: M:MYBooseApp.AppCanvas.Set(System.Int32,System.Int32)
+  name.vb: Set(Integer, Integer)
+  fullName: MYBooseApp.AppCanvas.Set(int, int)
+  fullName.vb: MYBooseApp.AppCanvas.Set(Integer, Integer)
+  nameWithType: AppCanvas.Set(int, int)
+  nameWithType.vb: AppCanvas.Set(Integer, Integer)
+- uid: MYBooseApp.AppCanvas.Set*
+  name: Set
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Set_
+  commentId: Overload:MYBooseApp.AppCanvas.Set
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.Set
+  nameWithType: AppCanvas.Set
+- uid: MYBooseApp.AppCanvas.SetColour(System.Int32,System.Int32,System.Int32)
+  name: SetColour(int, int, int)
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_SetColour_System_Int32_System_Int32_System_Int32_
+  commentId: M:MYBooseApp.AppCanvas.SetColour(System.Int32,System.Int32,System.Int32)
+  name.vb: SetColour(Integer, Integer, Integer)
+  fullName: MYBooseApp.AppCanvas.SetColour(int, int, int)
+  fullName.vb: MYBooseApp.AppCanvas.SetColour(Integer, Integer, Integer)
+  nameWithType: AppCanvas.SetColour(int, int, int)
+  nameWithType.vb: AppCanvas.SetColour(Integer, Integer, Integer)
+- uid: MYBooseApp.AppCanvas.SetColour*
+  name: SetColour
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_SetColour_
+  commentId: Overload:MYBooseApp.AppCanvas.SetColour
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.SetColour
+  nameWithType: AppCanvas.SetColour
+- uid: MYBooseApp.AppCanvas.Tri(System.Int32,System.Int32)
+  name: Tri(int, int)
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Tri_System_Int32_System_Int32_
+  commentId: M:MYBooseApp.AppCanvas.Tri(System.Int32,System.Int32)
+  name.vb: Tri(Integer, Integer)
+  fullName: MYBooseApp.AppCanvas.Tri(int, int)
+  fullName.vb: MYBooseApp.AppCanvas.Tri(Integer, Integer)
+  nameWithType: AppCanvas.Tri(int, int)
+  nameWithType.vb: AppCanvas.Tri(Integer, Integer)
+- uid: MYBooseApp.AppCanvas.Tri*
+  name: Tri
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Tri_
+  commentId: Overload:MYBooseApp.AppCanvas.Tri
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.Tri
+  nameWithType: AppCanvas.Tri
+- uid: MYBooseApp.AppCanvas.WriteText(System.String)
+  name: WriteText(string)
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_WriteText_System_String_
+  commentId: M:MYBooseApp.AppCanvas.WriteText(System.String)
+  name.vb: WriteText(String)
+  fullName: MYBooseApp.AppCanvas.WriteText(string)
+  fullName.vb: MYBooseApp.AppCanvas.WriteText(String)
+  nameWithType: AppCanvas.WriteText(string)
+  nameWithType.vb: AppCanvas.WriteText(String)
+- uid: MYBooseApp.AppCanvas.WriteText(System.String,System.Int32,System.Int32)
+  name: WriteText(string, int, int)
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_WriteText_System_String_System_Int32_System_Int32_
+  commentId: M:MYBooseApp.AppCanvas.WriteText(System.String,System.Int32,System.Int32)
+  name.vb: WriteText(String, Integer, Integer)
+  fullName: MYBooseApp.AppCanvas.WriteText(string, int, int)
+  fullName.vb: MYBooseApp.AppCanvas.WriteText(String, Integer, Integer)
+  nameWithType: AppCanvas.WriteText(string, int, int)
+  nameWithType.vb: AppCanvas.WriteText(String, Integer, Integer)
+- uid: MYBooseApp.AppCanvas.WriteText*
+  name: WriteText
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_WriteText_
+  commentId: Overload:MYBooseApp.AppCanvas.WriteText
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.WriteText
+  nameWithType: AppCanvas.WriteText
+- uid: MYBooseApp.AppCanvas.Xpos
+  name: Xpos
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Xpos
+  commentId: P:MYBooseApp.AppCanvas.Xpos
+  fullName: MYBooseApp.AppCanvas.Xpos
+  nameWithType: AppCanvas.Xpos
+- uid: MYBooseApp.AppCanvas.Xpos*
+  name: Xpos
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Xpos_
+  commentId: Overload:MYBooseApp.AppCanvas.Xpos
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.Xpos
+  nameWithType: AppCanvas.Xpos
+- uid: MYBooseApp.AppCanvas.Ypos
+  name: Ypos
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Ypos
+  commentId: P:MYBooseApp.AppCanvas.Ypos
+  fullName: MYBooseApp.AppCanvas.Ypos
+  nameWithType: AppCanvas.Ypos
+- uid: MYBooseApp.AppCanvas.Ypos*
+  name: Ypos
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_Ypos_
+  commentId: Overload:MYBooseApp.AppCanvas.Ypos
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.Ypos
+  nameWithType: AppCanvas.Ypos
+- uid: MYBooseApp.AppCanvas.getBitmap
+  name: getBitmap()
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_getBitmap
+  commentId: M:MYBooseApp.AppCanvas.getBitmap
+  fullName: MYBooseApp.AppCanvas.getBitmap()
+  nameWithType: AppCanvas.getBitmap()
+- uid: MYBooseApp.AppCanvas.getBitmap*
+  name: getBitmap
+  href: api/MYBooseApp.AppCanvas.html#MYBooseApp_AppCanvas_getBitmap_
+  commentId: Overload:MYBooseApp.AppCanvas.getBitmap
+  isSpec: "True"
+  fullName: MYBooseApp.AppCanvas.getBitmap
+  nameWithType: AppCanvas.getBitmap
+- uid: MYBooseApp.AppCommandFactory
+  name: AppCommandFactory
+  href: api/MYBooseApp.AppCommandFactory.html
+  commentId: T:MYBooseApp.AppCommandFactory
+  fullName: MYBooseApp.AppCommandFactory
+  nameWithType: AppCommandFactory
+- uid: MYBooseApp.AppCommandFactory.MakeCommand(System.String)
+  name: MakeCommand(string)
+  href: api/MYBooseApp.AppCommandFactory.html#MYBooseApp_AppCommandFactory_MakeCommand_System_String_
+  commentId: M:MYBooseApp.AppCommandFactory.MakeCommand(System.String)
+  name.vb: MakeCommand(String)
+  fullName: MYBooseApp.AppCommandFactory.MakeCommand(string)
+  fullName.vb: MYBooseApp.AppCommandFactory.MakeCommand(String)
+  nameWithType: AppCommandFactory.MakeCommand(string)
+  nameWithType.vb: AppCommandFactory.MakeCommand(String)
+- uid: MYBooseApp.AppCommandFactory.MakeCommand*
+  name: MakeCommand
+  href: api/MYBooseApp.AppCommandFactory.html#MYBooseApp_AppCommandFactory_MakeCommand_
+  commentId: Overload:MYBooseApp.AppCommandFactory.MakeCommand
+  isSpec: "True"
+  fullName: MYBooseApp.AppCommandFactory.MakeCommand
+  nameWithType: AppCommandFactory.MakeCommand
+- uid: MYBooseApp.AppMoveto
+  name: AppMoveto
+  href: api/MYBooseApp.AppMoveto.html
+  commentId: T:MYBooseApp.AppMoveto
+  fullName: MYBooseApp.AppMoveto
+  nameWithType: AppMoveto
+- uid: MYBooseApp.AppMoveto.Execute
+  name: Execute()
+  href: api/MYBooseApp.AppMoveto.html#MYBooseApp_AppMoveto_Execute
+  commentId: M:MYBooseApp.AppMoveto.Execute
+  fullName: MYBooseApp.AppMoveto.Execute()
+  nameWithType: AppMoveto.Execute()
+- uid: MYBooseApp.AppMoveto.Execute*
+  name: Execute
+  href: api/MYBooseApp.AppMoveto.html#MYBooseApp_AppMoveto_Execute_
+  commentId: Overload:MYBooseApp.AppMoveto.Execute
+  isSpec: "True"
+  fullName: MYBooseApp.AppMoveto.Execute
+  nameWithType: AppMoveto.Execute
+- uid: MYBooseApp.AppParser
+  name: AppParser
+  href: api/MYBooseApp.AppParser.html
+  commentId: T:MYBooseApp.AppParser
+  fullName: MYBooseApp.AppParser
+  nameWithType: AppParser
+- uid: MYBooseApp.AppParser.#ctor(BOOSE.CommandFactory,BOOSE.StoredProgram)
+  name: AppParser(CommandFactory, StoredProgram)
+  href: api/MYBooseApp.AppParser.html#MYBooseApp_AppParser__ctor_BOOSE_CommandFactory_BOOSE_StoredProgram_
+  commentId: M:MYBooseApp.AppParser.#ctor(BOOSE.CommandFactory,BOOSE.StoredProgram)
+  name.vb: New(CommandFactory, StoredProgram)
+  fullName: MYBooseApp.AppParser.AppParser(BOOSE.CommandFactory, BOOSE.StoredProgram)
+  fullName.vb: MYBooseApp.AppParser.New(BOOSE.CommandFactory, BOOSE.StoredProgram)
+  nameWithType: AppParser.AppParser(CommandFactory, StoredProgram)
+  nameWithType.vb: AppParser.New(CommandFactory, StoredProgram)
+- uid: MYBooseApp.AppParser.#ctor*
+  name: AppParser
+  href: api/MYBooseApp.AppParser.html#MYBooseApp_AppParser__ctor_
+  commentId: Overload:MYBooseApp.AppParser.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MYBooseApp.AppParser.AppParser
+  fullName.vb: MYBooseApp.AppParser.New
+  nameWithType: AppParser.AppParser
+  nameWithType.vb: AppParser.New
+- uid: MYBooseApp.AppParser.Parse(System.String)
+  name: Parse(string)
+  href: api/MYBooseApp.AppParser.html#MYBooseApp_AppParser_Parse_System_String_
+  commentId: M:MYBooseApp.AppParser.Parse(System.String)
+  name.vb: Parse(String)
+  fullName: MYBooseApp.AppParser.Parse(string)
+  fullName.vb: MYBooseApp.AppParser.Parse(String)
+  nameWithType: AppParser.Parse(string)
+  nameWithType.vb: AppParser.Parse(String)
+- uid: MYBooseApp.AppParser.Parse*
+  name: Parse
+  href: api/MYBooseApp.AppParser.html#MYBooseApp_AppParser_Parse_
+  commentId: Overload:MYBooseApp.AppParser.Parse
+  isSpec: "True"
+  fullName: MYBooseApp.AppParser.Parse
+  nameWithType: AppParser.Parse
+- uid: MYBooseApp.AppStoredProgram
+  name: AppStoredProgram
+  href: api/MYBooseApp.AppStoredProgram.html
+  commentId: T:MYBooseApp.AppStoredProgram
+  fullName: MYBooseApp.AppStoredProgram
+  nameWithType: AppStoredProgram
+- uid: MYBooseApp.AppStoredProgram.#ctor(BOOSE.ICanvas)
+  name: AppStoredProgram(ICanvas)
+  href: api/MYBooseApp.AppStoredProgram.html#MYBooseApp_AppStoredProgram__ctor_BOOSE_ICanvas_
+  commentId: M:MYBooseApp.AppStoredProgram.#ctor(BOOSE.ICanvas)
+  name.vb: New(ICanvas)
+  fullName: MYBooseApp.AppStoredProgram.AppStoredProgram(BOOSE.ICanvas)
+  fullName.vb: MYBooseApp.AppStoredProgram.New(BOOSE.ICanvas)
+  nameWithType: AppStoredProgram.AppStoredProgram(ICanvas)
+  nameWithType.vb: AppStoredProgram.New(ICanvas)
+- uid: MYBooseApp.AppStoredProgram.#ctor*
+  name: AppStoredProgram
+  href: api/MYBooseApp.AppStoredProgram.html#MYBooseApp_AppStoredProgram__ctor_
+  commentId: Overload:MYBooseApp.AppStoredProgram.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: MYBooseApp.AppStoredProgram.AppStoredProgram
+  fullName.vb: MYBooseApp.AppStoredProgram.New
+  nameWithType: AppStoredProgram.AppStoredProgram
+  nameWithType.vb: AppStoredProgram.New
+- uid: Medium_Scale_Software_Engineering_Project
+  name: Medium_Scale_Software_Engineering_Project
+  href: api/Medium_Scale_Software_Engineering_Project.html
+  commentId: N:Medium_Scale_Software_Engineering_Project
+  fullName: Medium_Scale_Software_Engineering_Project
+  nameWithType: Medium_Scale_Software_Engineering_Project
+- uid: Medium_Scale_Software_Engineering_Project.OutputForm
+  name: OutputForm
+  href: api/Medium_Scale_Software_Engineering_Project.OutputForm.html
+  commentId: T:Medium_Scale_Software_Engineering_Project.OutputForm
+  fullName: Medium_Scale_Software_Engineering_Project.OutputForm
+  nameWithType: OutputForm
+- uid: Medium_Scale_Software_Engineering_Project.OutputForm.#ctor
+  name: OutputForm()
+  href: api/Medium_Scale_Software_Engineering_Project.OutputForm.html#Medium_Scale_Software_Engineering_Project_OutputForm__ctor
+  commentId: M:Medium_Scale_Software_Engineering_Project.OutputForm.#ctor
+  name.vb: New()
+  fullName: Medium_Scale_Software_Engineering_Project.OutputForm.OutputForm()
+  fullName.vb: Medium_Scale_Software_Engineering_Project.OutputForm.New()
+  nameWithType: OutputForm.OutputForm()
+  nameWithType.vb: OutputForm.New()
+- uid: Medium_Scale_Software_Engineering_Project.OutputForm.#ctor*
+  name: OutputForm
+  href: api/Medium_Scale_Software_Engineering_Project.OutputForm.html#Medium_Scale_Software_Engineering_Project_OutputForm__ctor_
+  commentId: Overload:Medium_Scale_Software_Engineering_Project.OutputForm.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Medium_Scale_Software_Engineering_Project.OutputForm.OutputForm
+  fullName.vb: Medium_Scale_Software_Engineering_Project.OutputForm.New
+  nameWithType: OutputForm.OutputForm
+  nameWithType.vb: OutputForm.New
+- uid: Medium_Scale_Software_Engineering_Project.OutputForm.Dispose(System.Boolean)
+  name: Dispose(bool)
+  href: api/Medium_Scale_Software_Engineering_Project.OutputForm.html#Medium_Scale_Software_Engineering_Project_OutputForm_Dispose_System_Boolean_
+  commentId: M:Medium_Scale_Software_Engineering_Project.OutputForm.Dispose(System.Boolean)
+  name.vb: Dispose(Boolean)
+  fullName: Medium_Scale_Software_Engineering_Project.OutputForm.Dispose(bool)
+  fullName.vb: Medium_Scale_Software_Engineering_Project.OutputForm.Dispose(Boolean)
+  nameWithType: OutputForm.Dispose(bool)
+  nameWithType.vb: OutputForm.Dispose(Boolean)
+- uid: Medium_Scale_Software_Engineering_Project.OutputForm.Dispose*
+  name: Dispose
+  href: api/Medium_Scale_Software_Engineering_Project.OutputForm.html#Medium_Scale_Software_Engineering_Project_OutputForm_Dispose_
+  commentId: Overload:Medium_Scale_Software_Engineering_Project.OutputForm.Dispose
+  isSpec: "True"
+  fullName: Medium_Scale_Software_Engineering_Project.OutputForm.Dispose
+  nameWithType: OutputForm.Dispose
