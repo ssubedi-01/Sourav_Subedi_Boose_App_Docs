@@ -95,30 +95,212 @@
 Classes
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppArray.html">AppArray</a></dt>
+      <dd><p>Defines a one-dimensional array capable of storing integer or real values.
+Declaration syntax: array int|real arrayName size</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppAsign.html">AppAsign</a></dt>
+      <dd><p>Implements assignment functionality for variables that have already been declared.
+Supported syntax: &quot;set varName = expression&quot; or &quot;varName = expression&quot;.
+Example usages include &quot;set x = 10&quot; and &quot;x = y + 5&quot;.
+This command modifies the value of an existing variable without creating a new one.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppBoolean.html">AppBoolean</a></dt>
+      <dd><p>Custom Boolean implementation that avoids the default BOOSE Boolean limitations
+by extending the Evaluation class.
+Supports declaration and optional initialization using true/false literals
+or evaluatable expressions.
+Expression results are interpreted numerically, where non-zero represents true
+and zero represents false.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppCall.html">AppCall</a></dt>
+      <dd><p>Provides support for invoking user-defined methods with argument passing
+and optional return value handling.
+Call syntax: &quot;call methodName [arg1 arg2 ...]&quot;.
+Example usage: &quot;call mulMethod 10 5&quot;.
+This command manages parameter binding, return variable setup,
+and program counter redirection to simulate a standard function call.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="MYBooseApp.AppCanvas.html">AppCanvas</a></dt>
-      <dd><p>This class extends the canvas class from the library
-The umplemented method from the libray are implemented here</p>
+      <dd><p>Implements the ICanvas interface to provide drawing functionality.
+This class uses the Singleton design pattern to guarantee that
+only one canvas instance is created and shared across the application.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppCircle.html">AppCircle</a></dt>
+      <dd><p>Custom Circle command for the BOOSE language.
+Draws a circle on the canvas using a radius that can be
+a literal value or an evaluated expression at runtime.
+Optionally supports a filled flag.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppClear.html">AppClear</a></dt>
+      <dd><p>Implements the Clear command for the BOOSE language.
+Clears the entire canvas and removes all drawn content.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MYBooseApp.AppCommandFactory.html">AppCommandFactory</a></dt>
-      <dd><p>the extention of the command factory to add custom made command into it</p>
+      <dd><p>Application-specific command factory.
+Responsible for creating BOOSE commands supported by MYBooseApp.
+Extends the base CommandFactory to register custom drawing,
+variable, control-flow, and method-related commands.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="MYBooseApp.AppMoveto.html">AppMoveto</a></dt>
-      <dd><p>Override base moveto class to add validation for positive integers
-and handle invalid expressions gracefully</p>
+      <dt><a class="xref" href="MYBooseApp.AppDrawTo.html">AppDrawTo</a></dt>
+      <dd><p>Implements the DrawTo command for the BOOSE language.
+Draws a straight line from the current pen position
+to the specified X and Y coordinates on the canvas.</p>
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="MYBooseApp.AppParser.html">AppParser</a></dt>
-      <dd><p>extends the base parser from the library</p>
+      <dt><a class="xref" href="MYBooseApp.AppElse.html">AppElse</a></dt>
+      <dd><p>Represents the 'else' branch in an if-else conditional statement.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppEndFor.html">AppEndFor</a></dt>
+      <dd><p>Represents the end of a for loop and manages loop iteration.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppEndIf.html">AppEndIf</a></dt>
+      <dd><p>Represents the end of an if/else block in the BOOSE language.
+Serves as a marker to indicate where an if/else statement finishes.
+Execution of this command has no effect; it is only used for control flow.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppEndMethod.html">AppEndMethod</a></dt>
+      <dd><p>Represents the end of a method declaration in the BOOSE language.
+Serves as a marker indicating the method body has finished.
+When executed, it removes local parameters and returns control to the calling instruction.
+Syntax: &quot;end method&quot; or &quot;end&quot;.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppEndWhile.html">AppEndWhile</a></dt>
+      <dd><p>Represents the end of a while loop in the BOOSE language.
+Serves as a marker to return control to the corresponding <a class="xref" href="MYBooseApp.AppWhile.html">AppWhile</a> for condition evaluation.
+Syntax: &quot;end while&quot; or &quot;endwhile&quot;.
+Uses a forward-scanning mechanism—no backward linking is required.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppFor.html">AppFor</a></dt>
+      <dd><p>Represents a &quot;for&quot; loop in the BOOSE language with initialization, condition checking, and automatic increment.
+Syntax: &quot;for varName = start to end [step increment]&quot;.
+Example usage: &quot;for i = 0 to 10 step 1&quot; or &quot;for i = 0 to 10&quot; (step defaults to 1).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppIf.html">AppIf</a></dt>
+      <dd><p>Represents an 'if' conditional command in BOOSE.
+Evaluates a boolean condition and controls execution flow accordingly.
+Supports nested if-else structures when used with <a class="xref" href="MYBooseApp.AppStoredProgram.html">AppStoredProgram</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppMethod.html">AppMethod</a></dt>
+      <dd><p>Represents a custom method declaration in BOOSE.
+Handles parsing of return type, method name, parameters, and supports control flow management.
+Example syntax: &quot;method int mulMethod int one, int two&quot;</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppMoveto.html">AppMoveTo</a></dt>
+      <dd><p>Implements the MoveTo command for moving the pen to specified coordinates.
+Supports both literal integers and expressions/variables from the stored program.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppPeek.html">AppPeek</a></dt>
+      <dd><p>Implements the 'peek' command for reading a value from a 1D array into a variable.
+Syntax: peek targetVar = arrayName index
+Supports both integer and real arrays.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppPen.html">AppPen</a></dt>
+      <dd><p>Implements the 'Pen' command to set the drawing color on the canvas.
+Accepts three parameters (R, G, B) which can be literals or expressions.
+RGB values must be integers in the 0–255 range.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppPenSize.html">AppPenSize</a></dt>
+      <dd><p>Implements the 'PenSize' command to set the width of the pen on the canvas.
+Accepts a single parameter, which can be a literal integer or a BOOSE expression.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppPoke.html">AppPoke</a></dt>
+      <dd><p>Implements the 'poke' command to assign a value to a 1D array element.
+Syntax: poke arrayName index = value
+Supports integer and real arrays, with index and value evaluated as expressions if needed.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppReal.html">AppReal</a></dt>
+      <dd><p>Represents a real (double-precision) variable in the BOOSE language.
+Supports declaration with optional initialization and runtime expression evaluation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppRect.html">AppRect</a></dt>
+      <dd><p>Represents a rectangle drawing command in the BOOSE language.
+Draws a rectangle on the canvas using width and height expressions,
+and optionally supports a filled flag.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppReset.html">AppReset</a></dt>
+      <dd><p>Represents the Reset command for the BOOSE language.
+Resets the canvas state to its default settings.</p>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="MYBooseApp.AppStoredProgram.html">AppStoredProgram</a></dt>
-      <dd><p>extends the base stored program</p>
+      <dd><p>Extended version of <span class="xref">BOOSE.StoredProgram</span> with support for
+custom method registration and enhanced runtime execution.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppTri.html">AppTri</a></dt>
+      <dd><p>Command class for drawing a triangle on the canvas.
+Evaluates width and height at runtime, allowing the use of
+literal integers or expressions involving BOOSE variables.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppWhile.html">AppWhile</a></dt>
+      <dd><p>Implements a while loop command for BOOSE.
+Repeatedly executes the loop body as long as the condition expression evaluates to true.
+Supports nested loops using forward-scanning and an internal counter variable.
+Syntax: &quot;while condition&quot;</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.AppWrite.html">AppWrite</a></dt>
+      <dd><p>Command to write text or variable values on the canvas.
+Supports string literals, int and real variables, and expressions.
+Concatenates multiple parts using the '+' operator.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MYBooseApp.drawingApplication.html">drawingApplication</a></dt>
+      <dd><p>WinForms drawing application form class with canvas, command factory, stored program and parser</p>
 </dd>
     </dl>
 

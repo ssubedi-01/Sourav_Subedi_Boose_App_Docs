@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class AppMoveTo | Sourav_Subedi_Paint_App </title>
+      <title>Class AppCall | Sourav_Subedi_Paint_App </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class AppMoveTo | Sourav_Subedi_Paint_App ">
+      <meta name="title" content="Class AppCall | Sourav_Subedi_Paint_App ">
       
-      <meta name="description" content="Implements the MoveTo command for moving the pen to specified coordinates. Supports both literal integers and expressions/variables from the stored program.">
+      <meta name="description" content="Provides support for invoking user-defined methods with argument passing and optional return value handling. Call syntax: &amp;quot;call methodName [arg1 arg2 ...]&amp;quot;. Example usage: &amp;quot;call mulMethod 10 5&amp;quot;. This command manages parameter binding, return variable setup, and program counter redirection to simulate a standard function call.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/new/main/apiSpec/new?filename=MYBooseApp_AppMoveTo.md&amp;value=---%0Auid%3A%20MYBooseApp.AppMoveTo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/new/main/apiSpec/new?filename=MYBooseApp_AppCall.md&amp;value=---%0Auid%3A%20MYBooseApp.AppCall%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MYBooseApp.AppMoveTo">
+        <article data-uid="MYBooseApp.AppCall">
 
 
 
-  <h1 id="MYBooseApp_AppMoveTo" data-uid="MYBooseApp.AppMoveTo" class="text-break">
-Class AppMoveTo  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppMoveTo.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MYBooseApp_AppCall" data-uid="MYBooseApp.AppCall" class="text-break">
+Class AppCall  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCall.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,13 +97,17 @@ Class AppMoveTo  <a class="header-action link-secondary" title="View source" hre
   <dl><dt>Assembly</dt><dd>MYBooseApp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Implements the MoveTo command for moving the pen to specified coordinates.
-Supports both literal integers and expressions/variables from the stored program.</p>
+  <div class="markdown summary"><p>Provides support for invoking user-defined methods with argument passing
+and optional return value handling.
+Call syntax: &quot;call methodName [arg1 arg2 ...]&quot;.
+Example usage: &quot;call mulMethod 10 5&quot;.
+This command manages parameter binding, return variable setup,
+and program counter redirection to simulate a standard function call.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppMoveTo : CommandTwoParameters, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppCall : Command, ICommand</code></pre>
   </div>
 
 
@@ -114,10 +118,7 @@ Supports both literal integers and expressions/variables from the stored program
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><span class="xref">Command</span></div>
-      <div><span class="xref">CanvasCommand</span></div>
-      <div><span class="xref">CommandOneParameter</span></div>
-      <div><span class="xref">CommandTwoParameters</span></div>
-      <div><span class="xref">AppMoveTo</span></div>
+      <div><span class="xref">AppCall</span></div>
     </dd>
   </dl>
 
@@ -132,30 +133,6 @@ Supports both literal integers and expressions/variables from the stored program
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <span class="xref">CommandTwoParameters.param2</span>
-    </div>
-    <div>
-      <span class="xref">CommandTwoParameters.param2unprocessed</span>
-    </div>
-    <div>
-      <span class="xref">CommandOneParameter.param1</span>
-    </div>
-    <div>
-      <span class="xref">CommandOneParameter.param1unprocessed</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.yPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.xPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.canvas</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.Canvas</span>
-    </div>
     <div>
       <span class="xref">Command.IsDouble</span>
     </div>
@@ -221,27 +198,22 @@ Supports both literal integers and expressions/variables from the stored program
 </h2>
 
 
-  <a id="MYBooseApp_AppMoveTo__ctor_" data-uid="MYBooseApp.AppMoveTo.#ctor*"></a>
+  <a id="MYBooseApp_AppCall__ctor_" data-uid="MYBooseApp.AppCall.#ctor*"></a>
 
-  <h3 id="MYBooseApp_AppMoveTo__ctor_BOOSE_ICanvas_" data-uid="MYBooseApp.AppMoveTo.#ctor(BOOSE.ICanvas)">
-  AppMoveTo(ICanvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppMoveTo.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MYBooseApp_AppCall__ctor" data-uid="MYBooseApp.AppCall.#ctor">
+  AppCall()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCall.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance with a reference to the canvas.</p>
+  <div class="markdown level1 summary"><p>Creates a new instance of the AppCall command.
+Required for instantiation through the CommandFactory.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppMoveTo(ICanvas canvas)</code></pre>
+    <pre><code class="lang-csharp hljs">public AppCall()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>canvas</code> <span class="xref">ICanvas</span></dt>
-    <dd><p>The canvas on which to move the pen</p>
-</dd>
-  </dl>
 
 
 
@@ -258,25 +230,26 @@ Supports both literal integers and expressions/variables from the stored program
 </h2>
 
 
-  <a id="MYBooseApp_AppMoveTo_CheckParameters_" data-uid="MYBooseApp.AppMoveTo.CheckParameters*"></a>
+  <a id="MYBooseApp_AppCall_CheckParameters_" data-uid="MYBooseApp.AppCall.CheckParameters*"></a>
 
-  <h3 id="MYBooseApp_AppMoveTo_CheckParameters_System_String___" data-uid="MYBooseApp.AppMoveTo.CheckParameters(System.String[])">
+  <h3 id="MYBooseApp_AppCall_CheckParameters_System_String___" data-uid="MYBooseApp.AppCall.CheckParameters(System.String[])">
   CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppMoveTo.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCall.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Validates that exactly two parameters are provided.</p>
+  <div class="markdown level1 summary"><p>Parameter validation is not required for the call command.
+This method exists to satisfy the ICommand interface.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] ParameterList)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] parameterList)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>ParameterList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p>Array of parameters</p>
+    <dt><code>parameterList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Parameter list (not used)</p>
 </dd>
   </dl>
 
@@ -288,24 +261,18 @@ Supports both literal integers and expressions/variables from the stored program
 
 
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown if the number of parameters is not two</p>
-</dd>
-  </dl>
 
 
 
-  <a id="MYBooseApp_AppMoveTo_Compile_" data-uid="MYBooseApp.AppMoveTo.Compile*"></a>
+  <a id="MYBooseApp_AppCall_Compile_" data-uid="MYBooseApp.AppCall.Compile*"></a>
 
-  <h3 id="MYBooseApp_AppMoveTo_Compile" data-uid="MYBooseApp.AppMoveTo.Compile">
+  <h3 id="MYBooseApp_AppCall_Compile" data-uid="MYBooseApp.AppCall.Compile">
   Compile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppMoveTo.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCall.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Compilation phase. MoveTo evaluates expressions at runtime.
-Ensures parameter count is correct.</p>
+  <div class="markdown level1 summary"><p>No compilation logic is required for method calls.
+Method existence and argument validation occur at runtime.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -325,15 +292,17 @@ Ensures parameter count is correct.</p>
 
 
 
-  <a id="MYBooseApp_AppMoveTo_Execute_" data-uid="MYBooseApp.AppMoveTo.Execute*"></a>
+  <a id="MYBooseApp_AppCall_Execute_" data-uid="MYBooseApp.AppCall.Execute*"></a>
 
-  <h3 id="MYBooseApp_AppMoveTo_Execute" data-uid="MYBooseApp.AppMoveTo.Execute">
+  <h3 id="MYBooseApp_AppCall_Execute" data-uid="MYBooseApp.AppCall.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppMoveTo.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCall.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes the MoveTo command by evaluating X and Y coordinates
-and moving the pen to the computed position on the canvas.</p>
+  <div class="markdown level1 summary"><p>Executes the method call by resolving the target method,
+creating local parameter variables, preparing a return location,
+and transferring control to the method body.
+This mirrors the behavior of a function call in conventional languages.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -352,35 +321,41 @@ and moving the pen to the computed position on the canvas.</p>
 
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
+    <dt><span class="xref">BOOSEException</span></dt>
+    <dd><p>Thrown when the stored program is not an AppStoredProgram
+or when the specified method cannot be found</p>
+</dd>
     <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown when the X or Y parameter cannot be evaluated to a valid integer.</p>
+    <dd><p>Thrown when the number of supplied arguments does not match
+the method's parameter definition</p>
 </dd>
   </dl>
 
 
 
-  <a id="MYBooseApp_AppMoveTo_Set_" data-uid="MYBooseApp.AppMoveTo.Set*"></a>
+  <a id="MYBooseApp_AppCall_Set_" data-uid="MYBooseApp.AppCall.Set*"></a>
 
-  <h3 id="MYBooseApp_AppMoveTo_Set_BOOSE_StoredProgram_System_String_" data-uid="MYBooseApp.AppMoveTo.Set(BOOSE.StoredProgram,System.String)">
+  <h3 id="MYBooseApp_AppCall_Set_BOOSE_StoredProgram_System_String_" data-uid="MYBooseApp.AppCall.Set(BOOSE.StoredProgram,System.String)">
   Set(StoredProgram, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppMoveTo.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCall.cs/#L37"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets the stored program reference and splits the parameter string.</p>
+  <div class="markdown level1 summary"><p>Associates the command with the active stored program and parses
+the method name and argument list from the call statement.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram Program, string Params)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Set(StoredProgram Program, string Params)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>Program</code> <span class="xref">StoredProgram</span></dt>
-    <dd><p>The stored program instance</p>
+    <dd><p>The stored program currently being executed</p>
 </dd>
     <dt><code>Params</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The parameters string, e.g., &quot;100, 200&quot;</p>
+    <dd><p>Call arguments in the form &quot;methodName arg1 arg2 ...&quot;</p>
 </dd>
   </dl>
 
@@ -392,6 +367,12 @@ and moving the pen to the computed position on the canvas.</p>
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CommandException</span></dt>
+    <dd><p>Thrown when the call statement does not include a method name</p>
+</dd>
+  </dl>
 
 
 
@@ -399,7 +380,7 @@ and moving the pen to the computed position on the canvas.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppMoveTo.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCall.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 

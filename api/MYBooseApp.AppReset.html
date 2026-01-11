@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class AppMoveTo | Sourav_Subedi_Paint_App </title>
+      <title>Class AppReset | Sourav_Subedi_Paint_App </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class AppMoveTo | Sourav_Subedi_Paint_App ">
+      <meta name="title" content="Class AppReset | Sourav_Subedi_Paint_App ">
       
-      <meta name="description" content="Implements the MoveTo command for moving the pen to specified coordinates. Supports both literal integers and expressions/variables from the stored program.">
+      <meta name="description" content="Represents the Reset command for the BOOSE language. Resets the canvas state to its default settings.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/new/main/apiSpec/new?filename=MYBooseApp_AppMoveTo.md&amp;value=---%0Auid%3A%20MYBooseApp.AppMoveTo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/new/main/apiSpec/new?filename=MYBooseApp_AppReset.md&amp;value=---%0Auid%3A%20MYBooseApp.AppReset%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="MYBooseApp.AppMoveTo">
+        <article data-uid="MYBooseApp.AppReset">
 
 
 
-  <h1 id="MYBooseApp_AppMoveTo" data-uid="MYBooseApp.AppMoveTo" class="text-break">
-Class AppMoveTo  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppMoveTo.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <h1 id="MYBooseApp_AppReset" data-uid="MYBooseApp.AppReset" class="text-break">
+Class AppReset  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppReset.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,13 +97,13 @@ Class AppMoveTo  <a class="header-action link-secondary" title="View source" hre
   <dl><dt>Assembly</dt><dd>MYBooseApp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Implements the MoveTo command for moving the pen to specified coordinates.
-Supports both literal integers and expressions/variables from the stored program.</p>
+  <div class="markdown summary"><p>Represents the Reset command for the BOOSE language.
+Resets the canvas state to its default settings.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppMoveTo : CommandTwoParameters, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppReset : CommandOneParameter, ICommand</code></pre>
   </div>
 
 
@@ -116,8 +116,7 @@ Supports both literal integers and expressions/variables from the stored program
       <div><span class="xref">Command</span></div>
       <div><span class="xref">CanvasCommand</span></div>
       <div><span class="xref">CommandOneParameter</span></div>
-      <div><span class="xref">CommandTwoParameters</span></div>
-      <div><span class="xref">AppMoveTo</span></div>
+      <div><span class="xref">AppReset</span></div>
     </dd>
   </dl>
 
@@ -132,12 +131,6 @@ Supports both literal integers and expressions/variables from the stored program
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <span class="xref">CommandTwoParameters.param2</span>
-    </div>
-    <div>
-      <span class="xref">CommandTwoParameters.param2unprocessed</span>
-    </div>
     <div>
       <span class="xref">CommandOneParameter.param1</span>
     </div>
@@ -221,25 +214,26 @@ Supports both literal integers and expressions/variables from the stored program
 </h2>
 
 
-  <a id="MYBooseApp_AppMoveTo__ctor_" data-uid="MYBooseApp.AppMoveTo.#ctor*"></a>
+  <a id="MYBooseApp_AppReset__ctor_" data-uid="MYBooseApp.AppReset.#ctor*"></a>
 
-  <h3 id="MYBooseApp_AppMoveTo__ctor_BOOSE_ICanvas_" data-uid="MYBooseApp.AppMoveTo.#ctor(BOOSE.ICanvas)">
-  AppMoveTo(ICanvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppMoveTo.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <h3 id="MYBooseApp_AppReset__ctor_BOOSE_ICanvas_" data-uid="MYBooseApp.AppReset.#ctor(BOOSE.ICanvas)">
+  AppReset(ICanvas)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppReset.cs/#L20"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Initializes a new instance with a reference to the canvas.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MYBooseApp.AppReset.html">AppReset</a> class
+with the specified canvas.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppMoveTo(ICanvas canvas)</code></pre>
+    <pre><code class="lang-csharp hljs">public AppReset(ICanvas canvas)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>canvas</code> <span class="xref">ICanvas</span></dt>
-    <dd><p>The canvas on which to move the pen</p>
+    <dd><p>The canvas to reset.</p>
 </dd>
   </dl>
 
@@ -258,25 +252,26 @@ Supports both literal integers and expressions/variables from the stored program
 </h2>
 
 
-  <a id="MYBooseApp_AppMoveTo_CheckParameters_" data-uid="MYBooseApp.AppMoveTo.CheckParameters*"></a>
+  <a id="MYBooseApp_AppReset_CheckParameters_" data-uid="MYBooseApp.AppReset.CheckParameters*"></a>
 
-  <h3 id="MYBooseApp_AppMoveTo_CheckParameters_System_String___" data-uid="MYBooseApp.AppMoveTo.CheckParameters(System.String[])">
+  <h3 id="MYBooseApp_AppReset_CheckParameters_System_String___" data-uid="MYBooseApp.AppReset.CheckParameters(System.String[])">
   CheckParameters(string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppMoveTo.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppReset.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Validates that exactly two parameters are provided.</p>
+  <div class="markdown level1 summary"><p>Validates parameters for the Reset command.
+Ensures that no extra parameters are provided.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] ParameterList)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] Parameters)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>ParameterList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
-    <dd><p>Array of parameters</p>
+    <dt><code>Parameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd><p>Array of parameters to validate.</p>
 </dd>
   </dl>
 
@@ -290,22 +285,22 @@ Supports both literal integers and expressions/variables from the stored program
 
   <h4 class="section">Exceptions</h4>
   <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown if the number of parameters is not two</p>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown if any parameters are provided to the Reset command.</p>
 </dd>
   </dl>
 
 
 
-  <a id="MYBooseApp_AppMoveTo_Compile_" data-uid="MYBooseApp.AppMoveTo.Compile*"></a>
+  <a id="MYBooseApp_AppReset_Compile_" data-uid="MYBooseApp.AppReset.Compile*"></a>
 
-  <h3 id="MYBooseApp_AppMoveTo_Compile" data-uid="MYBooseApp.AppMoveTo.Compile">
+  <h3 id="MYBooseApp_AppReset_Compile" data-uid="MYBooseApp.AppReset.Compile">
   Compile()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppMoveTo.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppReset.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Compilation phase. MoveTo evaluates expressions at runtime.
-Ensures parameter count is correct.</p>
+  <div class="markdown level1 summary"><p>Compiles the Reset command.
+No compilation logic is required for this command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -325,15 +320,14 @@ Ensures parameter count is correct.</p>
 
 
 
-  <a id="MYBooseApp_AppMoveTo_Execute_" data-uid="MYBooseApp.AppMoveTo.Execute*"></a>
+  <a id="MYBooseApp_AppReset_Execute_" data-uid="MYBooseApp.AppReset.Execute*"></a>
 
-  <h3 id="MYBooseApp_AppMoveTo_Execute" data-uid="MYBooseApp.AppMoveTo.Execute">
+  <h3 id="MYBooseApp_AppReset_Execute" data-uid="MYBooseApp.AppReset.Execute">
   Execute()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppMoveTo.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppReset.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Executes the MoveTo command by evaluating X and Y coordinates
-and moving the pen to the computed position on the canvas.</p>
+  <div class="markdown level1 summary"><p>Executes the Reset command by resetting the canvas to its default state.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -350,23 +344,18 @@ and moving the pen to the computed position on the canvas.</p>
 
 
 
-  <h4 class="section">Exceptions</h4>
-  <dl class="parameters">
-    <dt><span class="xref">CommandException</span></dt>
-    <dd><p>Thrown when the X or Y parameter cannot be evaluated to a valid integer.</p>
-</dd>
-  </dl>
 
 
 
-  <a id="MYBooseApp_AppMoveTo_Set_" data-uid="MYBooseApp.AppMoveTo.Set*"></a>
+  <a id="MYBooseApp_AppReset_Set_" data-uid="MYBooseApp.AppReset.Set*"></a>
 
-  <h3 id="MYBooseApp_AppMoveTo_Set_BOOSE_StoredProgram_System_String_" data-uid="MYBooseApp.AppMoveTo.Set(BOOSE.StoredProgram,System.String)">
+  <h3 id="MYBooseApp_AppReset_Set_BOOSE_StoredProgram_System_String_" data-uid="MYBooseApp.AppReset.Set(BOOSE.StoredProgram,System.String)">
   Set(StoredProgram, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppMoveTo.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppReset.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Sets the stored program reference and splits the parameter string.</p>
+  <div class="markdown level1 summary"><p>Sets the stored program reference and initializes parameters.
+Reset does not require any parameters.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -377,10 +366,10 @@ and moving the pen to the computed position on the canvas.</p>
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>Program</code> <span class="xref">StoredProgram</span></dt>
-    <dd><p>The stored program instance</p>
+    <dd><p>The stored program associated with this command.</p>
 </dd>
     <dt><code>Params</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>The parameters string, e.g., &quot;100, 200&quot;</p>
+    <dd><p>Command parameters (ignored).</p>
 </dd>
   </dl>
 
@@ -399,7 +388,7 @@ and moving the pen to the computed position on the canvas.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppMoveTo.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppReset.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
 

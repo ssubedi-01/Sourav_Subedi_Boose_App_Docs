@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class AppCanvas | Sourav_Subedi_Paint_App ">
       
-      <meta name="description" content="This class extends the canvas class from the library The umplemented method from the libray are implemented here">
+      <meta name="description" content="Implements the ICanvas interface to provide drawing functionality. This class uses the Singleton design pattern to guarantee that only one canvas instance is created and shared across the application.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MYBooseApp_AppCanvas" data-uid="MYBooseApp.AppCanvas" class="text-break">
-Class AppCanvas  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class AppCanvas  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,13 +97,14 @@ Class AppCanvas  <a class="header-action link-secondary" title="View source" hre
   <dl><dt>Assembly</dt><dd>MYBooseApp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>This class extends the canvas class from the library
-The umplemented method from the libray are implemented here</p>
+  <div class="markdown summary"><p>Implements the ICanvas interface to provide drawing functionality.
+This class uses the Singleton design pattern to guarantee that
+only one canvas instance is created and shared across the application.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppCanvas : Canvas, ICanvas</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppCanvas : ICanvas</code></pre>
   </div>
 
 
@@ -113,7 +114,6 @@ The umplemented method from the libray are implemented here</p>
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">Canvas</span></div>
       <div><span class="xref">AppCanvas</span></div>
     </dd>
   </dl>
@@ -129,9 +129,6 @@ The umplemented method from the libray are implemented here</p>
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <span class="xref">Canvas.background_colour</span>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -160,46 +157,6 @@ The umplemented method from the libray are implemented here</p>
 
 
 
-  <h2 class="section" id="constructors">Constructors
-</h2>
-
-
-  <a id="MYBooseApp_AppCanvas__ctor_" data-uid="MYBooseApp.AppCanvas.#ctor*"></a>
-
-  <h3 id="MYBooseApp_AppCanvas__ctor_System_Int32_System_Int32_" data-uid="MYBooseApp.AppCanvas.#ctor(System.Int32,System.Int32)">
-  AppCanvas(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L27"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>it is used to initalize the canvas</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppCanvas(int width, int height)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>the width of the canvas</p>
-</dd>
-    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>the height of the canvas</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -208,15 +165,15 @@ The umplemented method from the libray are implemented here</p>
 
   <h3 id="MYBooseApp_AppCanvas_PenColour" data-uid="MYBooseApp.AppCanvas.PenColour">
   PenColour
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>handels the color of the pen</p>
+  <div class="markdown level1 summary"><p>Gets or sets the current pen colour.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override object PenColour { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public object PenColour { get; set; }</code></pre>
   </div>
 
 
@@ -240,15 +197,15 @@ The umplemented method from the libray are implemented here</p>
 
   <h3 id="MYBooseApp_AppCanvas_Xpos" data-uid="MYBooseApp.AppCanvas.Xpos">
   Xpos
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>handlels the horizontal position of the cursor</p>
+  <div class="markdown level1 summary"><p>Gets or sets the current horizontal position of the drawing cursor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override int Xpos { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int Xpos { get; set; }</code></pre>
   </div>
 
 
@@ -272,15 +229,15 @@ The umplemented method from the libray are implemented here</p>
 
   <h3 id="MYBooseApp_AppCanvas_Ypos" data-uid="MYBooseApp.AppCanvas.Ypos">
   Ypos
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>handlels the verticle position of the cursor</p>
+  <div class="markdown level1 summary"><p>Gets or sets the current vertical position of the drawing cursor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override int Ypos { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int Ypos { get; set; }</code></pre>
   </div>
 
 
@@ -308,24 +265,24 @@ The umplemented method from the libray are implemented here</p>
 
   <h3 id="MYBooseApp_AppCanvas_Circle_System_Int32_System_Boolean_" data-uid="MYBooseApp.AppCanvas.Circle(System.Int32,System.Boolean)">
   Circle(int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>draws the circle</p>
+  <div class="markdown level1 summary"><p>Draws a circle centred at the current cursor position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Circle(int radius, bool filled)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Circle(int radius, bool filled = false)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>the radius of the circle</p>
+    <dd><p>Radius of the circle</p>
 </dd>
     <dt><code>filled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>bool value to determine the fill of the circle</p>
+    <dd><p>Indicates whether the circle should be filled</p>
 </dd>
   </dl>
 
@@ -344,42 +301,15 @@ The umplemented method from the libray are implemented here</p>
 
   <h3 id="MYBooseApp_AppCanvas_Clear" data-uid="MYBooseApp.AppCanvas.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>clears the canvas</p>
+  <div class="markdown level1 summary"><p>Clears all drawings from the canvas.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Clear()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MYBooseApp_AppCanvas_DisposeResources_" data-uid="MYBooseApp.AppCanvas.DisposeResources*"></a>
-
-  <h3 id="MYBooseApp_AppCanvas_DisposeResources" data-uid="MYBooseApp.AppCanvas.DisposeResources">
-  DisposeResources()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L252"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>used to dispose the resource after use</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void DisposeResources()</code></pre>
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
   </div>
 
 
@@ -398,24 +328,99 @@ The umplemented method from the libray are implemented here</p>
 
   <h3 id="MYBooseApp_AppCanvas_DrawTo_System_Int32_System_Int32_" data-uid="MYBooseApp.AppCanvas.DrawTo(System.Int32,System.Int32)">
   DrawTo(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L148"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>draws the line</p>
+  <div class="markdown level1 summary"><p>Draws a line from the current cursor position to the specified point.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void DrawTo(int x, int y)</code></pre>
+    <pre><code class="lang-csharp hljs">public void DrawTo(int x, int y)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>horizontal position of the end of line</p>
+    <dd><p>Target X coordinate</p>
 </dd>
     <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>verticle position fo the end of line</p>
+    <dd><p>Target Y coordinate</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_Instance_" data-uid="MYBooseApp.AppCanvas.Instance*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_Instance_System_Int32_System_Int32_" data-uid="MYBooseApp.AppCanvas.Instance(System.Int32,System.Int32)">
+  Instance(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the global AppCanvas instance, creating it if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AppCanvas Instance(int width = 1280, int height = 1080)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Canvas width (used only on first creation)</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Canvas height (used only on first creation)</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MYBooseApp.AppCanvas.html">AppCanvas</a></dt>
+    <dd><p>The singleton AppCanvas instance</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_LinkToPictureBox_" data-uid="MYBooseApp.AppCanvas.LinkToPictureBox*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_LinkToPictureBox_System_Windows_Forms_PictureBox_" data-uid="MYBooseApp.AppCanvas.LinkToPictureBox(System.Windows.Forms.PictureBox)">
+  LinkToPictureBox(PictureBox)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Associates the canvas bitmap with a PictureBox for rendering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LinkToPictureBox(PictureBox pictureBox)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pictureBox</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.picturebox">PictureBox</a></dt>
+    <dd><p>PictureBox used to display the canvas</p>
 </dd>
   </dl>
 
@@ -434,24 +439,24 @@ The umplemented method from the libray are implemented here</p>
 
   <h3 id="MYBooseApp_AppCanvas_MoveTo_System_Int32_System_Int32_" data-uid="MYBooseApp.AppCanvas.MoveTo(System.Int32,System.Int32)">
   MoveTo(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>moves the pen to the desired position</p>
+  <div class="markdown level1 summary"><p>Moves the drawing cursor to the specified location without drawing.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void MoveTo(int x, int y)</code></pre>
+    <pre><code class="lang-csharp hljs">public void MoveTo(int x, int y)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>horizontal position of the pen</p>
+    <dd><p>New X coordinate</p>
 </dd>
     <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>vertical postion of the pen</p>
+    <dd><p>New Y coordinate</p>
 </dd>
   </dl>
 
@@ -470,64 +475,28 @@ The umplemented method from the libray are implemented here</p>
 
   <h3 id="MYBooseApp_AppCanvas_Rect_System_Int32_System_Int32_System_Boolean_" data-uid="MYBooseApp.AppCanvas.Rect(System.Int32,System.Int32,System.Boolean)">
   Rect(int, int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>draws the rectangle</p>
+  <div class="markdown level1 summary"><p>Draws a rectangle using the current cursor position as the top-left corner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Rect(int width, int height, bool filled)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Rect(int width, int height, bool filled)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>width of recatangle</p>
+    <dd><p>Width of the rectangle</p>
 </dd>
     <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>height of rectangle</p>
+    <dd><p>Height of the rectangle</p>
 </dd>
     <dt><code>filled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>bool value to determine the fill of the rectangle</p>
+    <dd><p>Indicates whether the rectangle should be filled</p>
 </dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MYBooseApp_AppCanvas_Rectangle_" data-uid="MYBooseApp.AppCanvas.Rectangle*"></a>
-
-  <h3 id="MYBooseApp_AppCanvas_Rectangle_System_Int32_System_Int32_System_Boolean_" data-uid="MYBooseApp.AppCanvas.Rectangle(System.Int32,System.Int32,System.Boolean)">
-  Rectangle(int, int, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L119"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>handles the difference in spelling of the rect method</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Rectangle(int width, int height, bool filled)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-    <dt><code>filled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
   </dl>
 
 
@@ -545,15 +514,44 @@ The umplemented method from the libray are implemented here</p>
 
   <h3 id="MYBooseApp_AppCanvas_Reset" data-uid="MYBooseApp.AppCanvas.Reset">
   Reset()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>resets the canvas and sets position of pen to 0,0</p>
+  <div class="markdown level1 summary"><p>Resets the canvas to its initial state, clearing all drawings
+and restoring default cursor and pen settings.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Reset()</code></pre>
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_ResetInstance_" data-uid="MYBooseApp.AppCanvas.ResetInstance*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_ResetInstance" data-uid="MYBooseApp.AppCanvas.ResetInstance">
+  ResetInstance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets the singleton instance, allowing a new canvas
+to be created on the next request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ResetInstance()</code></pre>
   </div>
 
 
@@ -572,22 +570,25 @@ The umplemented method from the libray are implemented here</p>
 
   <h3 id="MYBooseApp_AppCanvas_Set_System_Int32_System_Int32_" data-uid="MYBooseApp.AppCanvas.Set(System.Int32,System.Int32)">
   Set(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Resizes the canvas and reinitializes the drawing surface.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Set(int width, int height)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Set(int width, int height)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>New canvas width</p>
+</dd>
     <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>New canvas height</p>
+</dd>
   </dl>
 
 
@@ -605,27 +606,27 @@ The umplemented method from the libray are implemented here</p>
 
   <h3 id="MYBooseApp_AppCanvas_SetColour_System_Int32_System_Int32_System_Int32_" data-uid="MYBooseApp.AppCanvas.SetColour(System.Int32,System.Int32,System.Int32)">
   SetColour(int, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L206"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>sets the color of the brush</p>
+  <div class="markdown level1 summary"><p>Sets the pen colour using individual RGB components.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SetColour(int red, int green, int blue)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetColour(int red, int green, int blue)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>red</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>red value</p>
+    <dd><p>Red value (0–255)</p>
 </dd>
     <dt><code>green</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>green value</p>
+    <dd><p>Green value (0–255)</p>
 </dd>
     <dt><code>blue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>blue value</p>
+    <dd><p>Blue value (0–255)</p>
 </dd>
   </dl>
 
@@ -644,23 +645,25 @@ The umplemented method from the libray are implemented here</p>
 
   <h3 id="MYBooseApp_AppCanvas_Tri_System_Int32_System_Int32_" data-uid="MYBooseApp.AppCanvas.Tri(System.Int32,System.Int32)">
   Tri(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L216"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>draws the triangle</p>
+  <div class="markdown level1 summary"><p>Draws an outlined triangle at the current cursor position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Tri(int width, int height)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Tri(int width, int height)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>Base width of the triangle</p>
+</dd>
     <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dd><p>Height of the triangle</p>
+</dd>
   </dl>
 
 
@@ -678,58 +681,21 @@ The umplemented method from the libray are implemented here</p>
 
   <h3 id="MYBooseApp_AppCanvas_WriteText_System_String_" data-uid="MYBooseApp.AppCanvas.WriteText(System.String)">
   WriteText(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L231"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void WriteText(string text)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="MYBooseApp_AppCanvas_WriteText_" data-uid="MYBooseApp.AppCanvas.WriteText*"></a>
-
-  <h3 id="MYBooseApp_AppCanvas_WriteText_System_String_System_Int32_System_Int32_" data-uid="MYBooseApp.AppCanvas.WriteText(System.String,System.Int32,System.Int32)">
-  WriteText(string, int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L240"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>writes the text in the canvas</p>
+  <div class="markdown level1 summary"><p>Renders text at the current cursor position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void WriteText(string text, int x, int y)</code></pre>
+    <pre><code class="lang-csharp hljs">public void WriteText(string text)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>the text to be written</p>
-</dd>
-    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>the horizontal position of the text</p>
-</dd>
-    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>the vertical position of the text</p>
+    <dd><p>Text to be drawn</p>
 </dd>
   </dl>
 
@@ -748,23 +714,57 @@ The umplemented method from the libray are implemented here</p>
 
   <h3 id="MYBooseApp_AppCanvas_getBitmap" data-uid="MYBooseApp.AppCanvas.getBitmap">
   getBitmap()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L257"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>returns the bitmap</p>
+  <div class="markdown level1 summary"><p>Retrieves the current bitmap representing the canvas contents.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override object getBitmap()</code></pre>
+    <pre><code class="lang-csharp hljs">public object getBitmap()</code></pre>
   </div>
 
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
+    <dd><p>The canvas bitmap</p>
+</dd>
   </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppCanvas_penSize_" data-uid="MYBooseApp.AppCanvas.penSize*"></a>
+
+  <h3 id="MYBooseApp_AppCanvas_penSize_System_Int32_" data-uid="MYBooseApp.AppCanvas.penSize(System.Int32)">
+  penSize(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the pen thickness used for drawing operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void penSize(int size)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>New pen width</p>
+</dd>
+  </dl>
+
 
 
 
@@ -780,7 +780,7 @@ The umplemented method from the libray are implemented here</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCanvas.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 
