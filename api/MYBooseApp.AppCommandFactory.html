@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class AppCommandFactory | Sourav_Subedi_Paint_App ">
       
-      <meta name="description" content="the extention of the command factory to add custom made command into it">
+      <meta name="description" content="Application-specific command factory. Responsible for creating BOOSE commands supported by MYBooseApp. Extends the base CommandFactory to register custom drawing, variable, control-flow, and method-related commands.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MYBooseApp_AppCommandFactory" data-uid="MYBooseApp.AppCommandFactory" class="text-break">
-Class AppCommandFactory  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCommandFactory.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Class AppCommandFactory  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCommandFactory.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,10 @@ Class AppCommandFactory  <a class="header-action link-secondary" title="View sou
   <dl><dt>Assembly</dt><dd>MYBooseApp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>the extention of the command factory to add custom made command into it</p>
+  <div class="markdown summary"><p>Application-specific command factory.
+Responsible for creating BOOSE commands supported by MYBooseApp.
+Extends the base CommandFactory to register custom drawing,
+variable, control-flow, and method-related commands.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -156,6 +159,43 @@ Class AppCommandFactory  <a class="header-action link-secondary" title="View sou
 
 
 
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MYBooseApp_AppCommandFactory__ctor_" data-uid="MYBooseApp.AppCommandFactory.#ctor*"></a>
+
+  <h3 id="MYBooseApp_AppCommandFactory__ctor_BOOSE_ICanvas_" data-uid="MYBooseApp.AppCommandFactory.#ctor(BOOSE.ICanvas)">
+  AppCommandFactory(ICanvas)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCommandFactory.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the AppCommandFactory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppCommandFactory(ICanvas canvas)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>canvas</code> <span class="xref">ICanvas</span></dt>
+    <dd><p>Reference to the application canvas used by drawing commands.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -164,28 +204,29 @@ Class AppCommandFactory  <a class="header-action link-secondary" title="View sou
 
   <h3 id="MYBooseApp_AppCommandFactory_MakeCommand_System_String_" data-uid="MYBooseApp.AppCommandFactory.MakeCommand(System.String)">
   MakeCommand(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCommandFactory.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCommandFactory.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>the method overrides the method from the base class to add custom commands</p>
+  <div class="markdown level1 summary"><p>Creates and returns an ICommand instance based on the supplied command type.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override ICommand MakeCommand(string commandType)</code></pre>
+    <pre><code class="lang-csharp hljs">public override ICommand MakeCommand(string CommandType)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>commandType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>the string command name</p>
+    <dt><code>CommandType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The command keyword parsed from the BOOSE program (e.g. &quot;circle&quot;, &quot;if&quot;, &quot;call&quot;).</p>
 </dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">ICommand</span></dt>
-    <dd></dd>
+    <dd><p>A new ICommand instance corresponding to the specified command.</p>
+</dd>
   </dl>
 
 
@@ -195,6 +236,12 @@ Class AppCommandFactory  <a class="header-action link-secondary" title="View sou
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when the command type is not recognised.</p>
+</dd>
+  </dl>
 
 
 
@@ -202,7 +249,7 @@ Class AppCommandFactory  <a class="header-action link-secondary" title="View sou
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCommandFactory.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppCommandFactory.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

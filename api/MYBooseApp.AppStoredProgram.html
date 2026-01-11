@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class AppStoredProgram | Sourav_Subedi_Paint_App ">
       
-      <meta name="description" content="extends the base stored program">
+      <meta name="description" content="Extended version of  with support for custom method registration and enhanced runtime execution.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="MYBooseApp_AppStoredProgram" data-uid="MYBooseApp.AppStoredProgram" class="text-break">
-Class AppStoredProgram  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppStoredProgram.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Class AppStoredProgram  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppStoredProgram.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class AppStoredProgram  <a class="header-action link-secondary" title="View sour
   <dl><dt>Assembly</dt><dd>MYBooseApp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>extends the base stored program</p>
+  <div class="markdown summary"><p>Extended version of <span class="xref">BOOSE.StoredProgram</span> with support for
+custom method registration and enhanced runtime execution.</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -204,9 +205,6 @@ Class AppStoredProgram  <a class="header-action link-secondary" title="View sour
     </div>
     <div>
       <span class="xref">StoredProgram.Commandsleft()</span>
-    </div>
-    <div>
-      <span class="xref">StoredProgram.Run()</span>
     </div>
     <div>
       <span class="xref">StoredProgram.PC</span>
@@ -394,10 +392,12 @@ Class AppStoredProgram  <a class="header-action link-secondary" title="View sour
 
   <h3 id="MYBooseApp_AppStoredProgram__ctor_BOOSE_ICanvas_" data-uid="MYBooseApp.AppStoredProgram.#ctor(BOOSE.ICanvas)">
   AppStoredProgram(ICanvas)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppStoredProgram.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppStoredProgram.cs/#L22"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="MYBooseApp.AppStoredProgram.html">AppStoredProgram</a> class
+with the specified canvas.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -407,7 +407,8 @@ Class AppStoredProgram  <a class="header-action link-secondary" title="View sour
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>canvas</code> <span class="xref">ICanvas</span></dt>
-    <dd></dd>
+    <dd><p>The canvas on which commands will operate.</p>
+</dd>
   </dl>
 
 
@@ -421,11 +422,250 @@ Class AppStoredProgram  <a class="header-action link-secondary" title="View sour
 
 
 
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MYBooseApp_AppStoredProgram_CommandCount_" data-uid="MYBooseApp.AppStoredProgram.CommandCount*"></a>
+
+  <h3 id="MYBooseApp_AppStoredProgram_CommandCount" data-uid="MYBooseApp.AppStoredProgram.CommandCount">
+  CommandCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppStoredProgram.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the total number of commands in the program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CommandCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MYBooseApp_AppStoredProgram_GetCommand_" data-uid="MYBooseApp.AppStoredProgram.GetCommand*"></a>
+
+  <h3 id="MYBooseApp_AppStoredProgram_GetCommand_System_Int32_" data-uid="MYBooseApp.AppStoredProgram.GetCommand(System.Int32)">
+  GetCommand(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppStoredProgram.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the command at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICommand GetCommand(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The command index.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ICommand</span></dt>
+    <dd><p>The command at the given index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">BOOSEException</span></dt>
+    <dd><p>Thrown if the index is out of range or the item is not an <span class="xref">BOOSE.ICommand</span>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MYBooseApp_AppStoredProgram_GetMethodStartIndex_" data-uid="MYBooseApp.AppStoredProgram.GetMethodStartIndex*"></a>
+
+  <h3 id="MYBooseApp_AppStoredProgram_GetMethodStartIndex_System_String_" data-uid="MYBooseApp.AppStoredProgram.GetMethodStartIndex(System.String)">
+  GetMethodStartIndex(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppStoredProgram.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the start index of a registered method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMethodStartIndex(string methodName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the method.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The start index of the method.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">BOOSEException</span></dt>
+    <dd><p>Thrown if the method does not exist.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MYBooseApp_AppStoredProgram_MethodExists_" data-uid="MYBooseApp.AppStoredProgram.MethodExists*"></a>
+
+  <h3 id="MYBooseApp_AppStoredProgram_MethodExists_System_String_" data-uid="MYBooseApp.AppStoredProgram.MethodExists(System.String)">
+  MethodExists(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppStoredProgram.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether a method with the specified name exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MethodExists(string methodName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The method name to check.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the method exists; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppStoredProgram_RegisterMethod_" data-uid="MYBooseApp.AppStoredProgram.RegisterMethod*"></a>
+
+  <h3 id="MYBooseApp_AppStoredProgram_RegisterMethod_System_String_System_Int32_" data-uid="MYBooseApp.AppStoredProgram.RegisterMethod(System.String,System.Int32)">
+  RegisterMethod(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppStoredProgram.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Registers a custom method by name and the index of its first command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterMethod(string methodName, int startIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>methodName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the method.</p>
+</dd>
+    <dt><code>startIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the first command of the method.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MYBooseApp_AppStoredProgram_Run_" data-uid="MYBooseApp.AppStoredProgram.Run*"></a>
+
+  <h3 id="MYBooseApp_AppStoredProgram_Run" data-uid="MYBooseApp.AppStoredProgram.Run">
+  Run()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppStoredProgram.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes the stored program, iterating through all commands.
+Detects potential infinite loops and reports syntax or runtime errors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Run()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">StoredProgramException</span></dt>
+    <dd><p>Thrown if the program contains syntax errors or a runtime exception occurs.</p>
+</dd>
+  </dl>
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppStoredProgram.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-ssubedi-01/blob/main/Medium_Scale_Software_Engineering_Project/Medium_Scale_Software_Engineering_Project/AppStoredProgram.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

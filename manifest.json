@@ -12,6 +12,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppArray.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppArray",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppArray.yml\" sourcestartlinenumber=\"1\">Defines a one-dimensional array capable of storing integer or real values.\nDeclaration syntax: array int|real arrayName size</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppAsign.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppAsign.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppAsign",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppAsign.yml\" sourcestartlinenumber=\"1\">Implements assignment functionality for variables that have already been declared.\nSupported syntax: &quot;set varName = expression&quot; or &quot;varName = expression&quot;.\nExample usages include &quot;set x = 10&quot; and &quot;x = y + 5&quot;.\nThis command modifies the value of an existing variable without creating a new one.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppBoolean.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppBoolean.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppBoolean",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppBoolean.yml\" sourcestartlinenumber=\"1\">Custom Boolean implementation that avoids the default BOOSE Boolean limitations\nby extending the Evaluation class.\nSupports declaration and optional initialization using true/false literals\nor evaluatable expressions.\nExpression results are interpreted numerically, where non-zero represents true\nand zero represents false.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppCall.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppCall.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppCall",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppCall.yml\" sourcestartlinenumber=\"1\">Provides support for invoking user-defined methods with argument passing\nand optional return value handling.\nCall syntax: &quot;call methodName [arg1 arg2 ...]&quot;.\nExample usage: &quot;call mulMethod 10 5&quot;.\nThis command manages parameter binding, return variable setup,\nand program counter redirection to simulate a standard function call.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MYBooseApp.AppCanvas.yml",
       "output": {
         ".html": {
@@ -22,7 +78,35 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MYBooseApp.AppCanvas",
-      "Summary": "<p sourcefile=\"api/MYBooseApp.AppCanvas.yml\" sourcestartlinenumber=\"1\">This class extends the canvas class from the library\nThe umplemented method from the libray are implemented here</p>\n"
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppCanvas.yml\" sourcestartlinenumber=\"1\">Implements the ICanvas interface to provide drawing functionality.\nThis class uses the Singleton design pattern to guarantee that\nonly one canvas instance is created and shared across the application.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppCircle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppCircle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppCircle",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppCircle.yml\" sourcestartlinenumber=\"1\">Custom Circle command for the BOOSE language.\nDraws a circle on the canvas using a radius that can be\na literal value or an evaluated expression at runtime.\nOptionally supports a filled flag.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppClear.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppClear.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppClear",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppClear.yml\" sourcestartlinenumber=\"1\">Implements the Clear command for the BOOSE language.\nClears the entire canvas and removes all drawn content.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -36,7 +120,133 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MYBooseApp.AppCommandFactory",
-      "Summary": "<p sourcefile=\"api/MYBooseApp.AppCommandFactory.yml\" sourcestartlinenumber=\"1\">the extention of the command factory to add custom made command into it</p>\n"
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppCommandFactory.yml\" sourcestartlinenumber=\"1\">Application-specific command factory.\nResponsible for creating BOOSE commands supported by MYBooseApp.\nExtends the base CommandFactory to register custom drawing,\nvariable, control-flow, and method-related commands.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppDrawTo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppDrawTo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppDrawTo",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppDrawTo.yml\" sourcestartlinenumber=\"1\">Implements the DrawTo command for the BOOSE language.\nDraws a straight line from the current pen position\nto the specified X and Y coordinates on the canvas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppElse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppElse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppElse",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppElse.yml\" sourcestartlinenumber=\"1\">Represents the 'else' branch in an if-else conditional statement.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppEndFor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppEndFor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppEndFor",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppEndFor.yml\" sourcestartlinenumber=\"1\">Represents the end of a for loop and manages loop iteration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppEndIf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppEndIf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppEndIf",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppEndIf.yml\" sourcestartlinenumber=\"1\">Represents the end of an if/else block in the BOOSE language.\nServes as a marker to indicate where an if/else statement finishes.\nExecution of this command has no effect; it is only used for control flow.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppEndMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppEndMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppEndMethod",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppEndMethod.yml\" sourcestartlinenumber=\"1\">Represents the end of a method declaration in the BOOSE language.\nServes as a marker indicating the method body has finished.\nWhen executed, it removes local parameters and returns control to the calling instruction.\nSyntax: &quot;end method&quot; or &quot;end&quot;.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppEndWhile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppEndWhile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppEndWhile",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppEndWhile.yml\" sourcestartlinenumber=\"1\">Represents the end of a while loop in the BOOSE language.\nServes as a marker to return control to the corresponding <xref href=\"MYBooseApp.AppWhile\" data-throw-if-not-resolved=\"false\"></xref> for condition evaluation.\nSyntax: &quot;end while&quot; or &quot;endwhile&quot;.\nUses a forward-scanning mechanism—no backward linking is required.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppFor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppFor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppFor",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppFor.yml\" sourcestartlinenumber=\"1\">Represents a &quot;for&quot; loop in the BOOSE language with initialization, condition checking, and automatic increment.\nSyntax: &quot;for varName = start to end [step increment]&quot;.\nExample usage: &quot;for i = 0 to 10 step 1&quot; or &quot;for i = 0 to 10&quot; (step defaults to 1).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppIf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppIf.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppIf",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppIf.yml\" sourcestartlinenumber=\"1\">Represents an 'if' conditional command in BOOSE.\nEvaluates a boolean condition and controls execution flow accordingly.\nSupports nested if-else structures when used with <xref href=\"MYBooseApp.AppStoredProgram\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppMethod",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppMethod.yml\" sourcestartlinenumber=\"1\">Represents a custom method declaration in BOOSE.\nHandles parsing of return type, method name, parameters, and supports control flow management.\nExample syntax: &quot;method int mulMethod int one, int two&quot;</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -49,8 +259,8 @@
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "MYBooseApp.AppMoveto",
-      "Summary": "<p sourcefile=\"api/MYBooseApp.AppMoveto.yml\" sourcestartlinenumber=\"1\">Override base moveto class to add validation for positive integers\nand handle invalid expressions gracefully</p>\n"
+      "Title": "MYBooseApp.AppMoveTo",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppMoveto.yml\" sourcestartlinenumber=\"1\">Implements the MoveTo command for moving the pen to specified coordinates.\nSupports both literal integers and expressions/variables from the stored program.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -68,6 +278,104 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppPeek.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppPeek.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppPeek",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppPeek.yml\" sourcestartlinenumber=\"1\">Implements the 'peek' command for reading a value from a 1D array into a variable.\nSyntax: peek targetVar = arrayName index\nSupports both integer and real arrays.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppPen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppPen.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppPen",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppPen.yml\" sourcestartlinenumber=\"1\">Implements the 'Pen' command to set the drawing color on the canvas.\nAccepts three parameters (R, G, B) which can be literals or expressions.\nRGB values must be integers in the 0–255 range.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppPenSize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppPenSize.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppPenSize",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppPenSize.yml\" sourcestartlinenumber=\"1\">Implements the 'PenSize' command to set the width of the pen on the canvas.\nAccepts a single parameter, which can be a literal integer or a BOOSE expression.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppPoke.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppPoke.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppPoke",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppPoke.yml\" sourcestartlinenumber=\"1\">Implements the 'poke' command to assign a value to a 1D array element.\nSyntax: poke arrayName index = value\nSupports integer and real arrays, with index and value evaluated as expressions if needed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppReal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppReal.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppReal",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppReal.yml\" sourcestartlinenumber=\"1\">Represents a real (double-precision) variable in the BOOSE language.\nSupports declaration with optional initialization and runtime expression evaluation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppRect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppRect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppRect",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppRect.yml\" sourcestartlinenumber=\"1\">Represents a rectangle drawing command in the BOOSE language.\nDraws a rectangle on the canvas using width and height expressions,\nand optionally supports a filled flag.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppReset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppReset.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppReset",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppReset.yml\" sourcestartlinenumber=\"1\">Represents the Reset command for the BOOSE language.\nResets the canvas state to its default settings.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MYBooseApp.AppStoredProgram.yml",
       "output": {
         ".html": {
@@ -78,7 +386,63 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MYBooseApp.AppStoredProgram",
-      "Summary": "<p sourcefile=\"api/MYBooseApp.AppStoredProgram.yml\" sourcestartlinenumber=\"1\">extends the base stored program</p>\n"
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppStoredProgram.yml\" sourcestartlinenumber=\"1\">Extended version of <xref href=\"BOOSE.StoredProgram\" data-throw-if-not-resolved=\"false\"></xref> with support for\ncustom method registration and enhanced runtime execution.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppTri.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppTri.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppTri",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppTri.yml\" sourcestartlinenumber=\"1\">Command class for drawing a triangle on the canvas.\nEvaluates width and height at runtime, allowing the use of\nliteral integers or expressions involving BOOSE variables.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppWhile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppWhile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppWhile",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppWhile.yml\" sourcestartlinenumber=\"1\">Implements a while loop command for BOOSE.\nRepeatedly executes the loop body as long as the condition expression evaluates to true.\nSupports nested loops using forward-scanning and an internal counter variable.\nSyntax: &quot;while condition&quot;</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.AppWrite.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.AppWrite.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.AppWrite",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.AppWrite.yml\" sourcestartlinenumber=\"1\">Command to write text or variable values on the canvas.\nSupports string literals, int and real variables, and expressions.\nConcatenates multiple parts using the '+' operator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MYBooseApp.drawingApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MYBooseApp.drawingApplication.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MYBooseApp.drawingApplication",
+      "Summary": "<p sourcefile=\"api/MYBooseApp.drawingApplication.yml\" sourcestartlinenumber=\"1\">WinForms drawing application form class with canvas, command factory, stored program and parser</p>\n"
     },
     {
       "type": "ManagedReference",
